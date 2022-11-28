@@ -2,14 +2,16 @@
   <section id="one">
     <header>
       <h2>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</h2>
-    </header>
       <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
+    </header>
   </section>
 
   <section id="two">
     <h2>Recent Work</h2>
-    <div>
-      // TODO: use a for loop here
+    <div v-for="item in workItems" :key="item.title">
+      <WorksCard 
+        :item="item"
+      ></WorksCard>
     </div>
 
     <a href="#">Check out my Github!</a>
@@ -17,6 +19,22 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import WorksCard from "@/components/WorksCard.vue"
 
+const workItems = ref([
+  {
+    title: 'Work 1',
+    description: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    image: '#',
+    href: '#',
+  },
+  {
+    title: 'Work 2',
+    description: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    image: '#',
+    href: '#',
+  }
+])
 </script>
 

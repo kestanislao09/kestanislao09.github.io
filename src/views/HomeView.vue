@@ -1,8 +1,6 @@
 <template>
   <div>
-    <Header />
     <Main />
-    <Footer />
   </div>
 </template>
 
@@ -12,6 +10,3 @@ import Main from "@/components/Main.vue"
 import Footer from "@/components/Footer.vue"
 </script>
 
-<style lang="scss" scoped>
-
-</style>
