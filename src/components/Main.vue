@@ -12,7 +12,7 @@
       class="pt-12 border-t"
     >
       <h2 class="text-lg mb-4"><strong>Recent Work</strong></h2>
-      <div class="grid grid-cols-2 mb-4">
+      <div class="grid grid-cols-2 gap-8 mb-4">
         <div v-for="item in workItems" :key="item.title">
           <WorksCard 
             :item="item"
