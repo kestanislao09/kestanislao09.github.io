@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-7">
-    <div class="col-span-2 fixed top-0 left-0 flex flex-col justify-between h-screen p-12 pt-20">
+    <div class="col-span-2 sticky top-0 left-0 flex flex-col justify-between items-end h-screen p-12 pt-20">
       <Header class="" />
       <Footer class=""/>
     </div>
