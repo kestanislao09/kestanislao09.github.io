@@ -4,11 +4,11 @@
       src="@/assets/bg-main.jpg"
       alt=""
       ref="background"
-      class="fixed top-0 lg:right-24 min-h-full min-w-[1024px] w-full h-auto"
+      class="fixed top-0 lg:left-0 min-h-full min-w-[1024px] w-full h-auto"
     >
     <div class="lg:col-span-2 relative lg:sticky top-0 lg:left-0
                 flex flex-col justify-between lg:items-end
-                lg:h-screen p-12 lg:pt-20">
+                lg:h-screen p-12 sm:py-20">
       <Header class="" />
       <Footer class="hidden lg:block"/>
     </div>
