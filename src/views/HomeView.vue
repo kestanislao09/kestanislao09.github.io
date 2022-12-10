@@ -1,16 +1,19 @@
 <template>
-  <div class="grid grid-cols-7">
+  <div class="grid lg:grid-cols-7">
     <img 
       src="@/assets/bg-main.jpg"
       alt=""
       ref="background"
-      class="fixed top-0 left-0 min-h-full min-w-[1024px] w-full h-auto"
+      class="fixed top-0 lg:right-24 min-h-full min-w-[1024px] w-full h-auto"
     >
-    <div class="col-span-2 sticky top-0 left-0 flex flex-col justify-between items-end h-screen p-12 pt-20">
+    <div class="lg:col-span-2 relative lg:sticky top-0 lg:left-0
+                flex flex-col justify-between lg:items-end
+                lg:h-screen p-12 lg:pt-20">
       <Header class="" />
-      <Footer class=""/>
+      <Footer class="hidden lg:block"/>
     </div>
-    <Main class="col-start-3 col-span-5 relative"/>
+    <Main class="relative lg:col-start-3 lg:col-span-5"/>
+    <Footer class="relative lg:hidden my-12" />
   </div>
 </template>
 

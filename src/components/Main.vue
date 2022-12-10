@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col px-12 py-20 bg-black/50">
+    <div class="flex flex-col px-12 py-20 bg-black/60 lg:bg-black/50 text-gray-200">
       <section id="one">
         <header>
           <h2 class="text-3xl">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</h2>
@@ -12,7 +12,7 @@
         class="pt-12 border-t"
       >
         <h2 class="text-lg mb-4"><strong>Recent Work</strong></h2>
-        <div class="grid grid-cols-2 gap-8 mb-8">
+        <div class="grid sm:grid-cols-2 gap-8 mb-8">
           <div v-for="item in workItems" :key="item.title">
             <WorksCard 
               :item="item"
